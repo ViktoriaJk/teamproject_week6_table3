@@ -20,13 +20,93 @@ body {
     align-items: center ;
     font-weight: 500;
     height: 60px;
-    border-bottom: solid 4px #fbf5e2;
+    /* border-bottom: solid 4px #fbf5e2; */
 }
     
 header a {
     color: #fbf5e2;
     text-decoration: none;
-    /* margin-bottom: 20px; */
+}
+
+.loadingBar{
+    height: 0.5vh;
+    background-color: #fbf5e2;
+    animation: loading 1.5s cubic-bezier(0.13, 0, 0, 0.95) forwards;
+}
+
+@keyframes loading {
+    0%{
+        width:0;
+    }
+    
+    100%{
+        
+        width: 100%;
+    }
+}
+
+.letter-2 {
+    
+    animation-delay: 100ms !important;
+}
+
+.letter-3 {
+   
+    animation-delay: 150ms !important;
+}
+
+.letter-4 {
+    
+    animation-delay: 200ms !important;
+}
+
+.letter-5 {
+    
+    animation-delay: 350ms !important;
+}
+
+.letter-6 {
+    
+    animation-delay: 400ms !important;
+}
+.letter-7 {
+    
+    animation-delay: 450ms !important;
+}
+.letter-8 {
+    
+    animation-delay: 500ms !important;
+}
+.letter-9 {
+    
+    animation-delay: 550ms !important;
+}
+
+
+.alternate-1 > path, .alternate-1 > polygon {
+    animation: waterFall 0.85s forwards ease-in-out ;
+    /* animation-iteration-count:3; */
+    
+}
+
+@keyframes waterFall {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 175px); opacity: 0%; }
+    51%  { transform: translate(0, -175px); }
+    100%   { transform: translate(0, 0px); opacity: 100%; }
+    }
+
+.asterisk{
+    animation: spinning 8s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+    
+}
+
+@keyframes spinning{
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .material-symbols-outlined {
@@ -59,6 +139,17 @@ header a {
     margin-bottom: 1.25vw;
     position:relative;
     overflow: hidden;
+    animation: pictureBorder 1s ease-in-out;
+    
+}
+
+@keyframes pictureBorder{
+    0%{
+        border:15px solid #1d1d1d;
+    }
+        100%{
+            border:0px solid #1d1d1d;
+    }
 }
 
 .img-div {
@@ -99,4 +190,18 @@ header a {
 .ray-charles img {
     width: 100%;
     
+}
+
+.caps{
+    opacity: 0;
+    animation: fadeIn 1.5s linear 500ms forwards;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity:0%;
+    }
+    100% {
+        opacity:100;
+    } 
 }
