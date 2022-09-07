@@ -18,9 +18,10 @@
 <body>
   <!-- <div class="note"><span class="material-symbols-outlined">music_note</span></div> -->
   <div class="music">
-    <button class="music-note"><span class="material-symbols-outlined">music_note</span></button>
+    <button onClick="togglePlay()" class="music-note"><span class="material-symbols-outlined">music_note</span></button>
   </div>
-
+  <audio id="music-button" src="live-in-stockholm.mp3" preload="auto">
+  </audio>
   <div id="luxy">
     <header>
       <div class="header">
@@ -129,6 +130,12 @@
 
       bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
     });
+
+    var myAudio = document.getElementById("music-button");
+
+    function togglePlay() {
+      return myAudio.paused ? myAudio.play() : myAudio.pause();
+    };
 
   </script>
 
