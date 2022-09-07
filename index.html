@@ -84,7 +84,7 @@
       </p>
     </div>
     <div class="img-div-container">
-      <div class="img-div">
+      <div class="img-div" id="img-div">
         <!-- <img src="theRaelettes.png" alt="woman_singing" /> -->
       </div>
     </div>
@@ -136,6 +136,14 @@
     function togglePlay() {
       return myAudio.paused ? myAudio.play() : myAudio.pause();
     };
+
+    var images = ['images/theRaelettes_1.jpg', 'images/theRaelettes_2.jpg', 'images/theRaelettes_3.jpg', 'images/theRaelettes_4.jpg'];
+    var longitut = images.length;
+    var num = Math.floor(Math.random()*longitut);
+    var foto = images[num];
+    foto = foto.toString();
+    
+    document.getElementById("img-div").style.backgroundImage = "url('"+ foto +"')";
 
   </script>
 
