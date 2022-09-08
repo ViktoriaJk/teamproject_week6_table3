@@ -20,8 +20,7 @@
   <div class="music">
     <button onClick="togglePlay()" class="music-note"><span class="material-symbols-outlined">music_note</span></button>
   </div>
-  <audio id="music-button" src="live-in-stockholm.mp3" preload="auto">
-  </audio>
+  <audio id="music-button" src="live-in-stockholm.mp3" preload="auto"></audio>
   <div id="luxy">
     <header>
       <div class="header">
@@ -113,40 +112,7 @@
     </div>
   </div>
   <script src="luxy.js" charset="utf-8"></script>
-  <script>
-    luxy.init({
-      wrapper: '#luxy',
-      targets: '.luxy-el',
-      wrapperSpeed: 0.08
-    });
-
-    const bg = document.querySelector(".img-div");
-    const windowWidth = window.innerWidth / 5;
-    const windowHeight = window.innerHeight / 5;
-
-    bg.addEventListener("mousemove", (e) => {
-      const mouseX = e.clientX / windowWidth / 3;
-      const mouseY = e.clientY / windowHeight / 3;
-
-      bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
-    });
-
-    var myAudio = document.getElementById("music-button");
-
-    function togglePlay() {
-      return myAudio.paused ? myAudio.play() : myAudio.pause();
-    };
-
-    var images = ['images/theRaelettes_1.jpg', 'images/theRaelettes_2.jpg', 'images/theRaelettes_3.jpg', 'images/theRaelettes_4.jpg'];
-    var longitut = images.length;
-    var num = Math.floor(Math.random()*longitut);
-    var foto = images[num];
-    foto = foto.toString();
-    
-    document.getElementById("img-div").style.backgroundImage = "url('"+ foto +"')";
-
-  </script>
-
+  <script src="scripts.js" charset="utf-8"></script>
   <!-- 
   sources:
   https://codepen.io/shadowdesigner/pen/ZpdwEa

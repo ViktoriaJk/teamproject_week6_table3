@@ -205,31 +205,3 @@
 
   return luxy;
 });
-
-var d1 = document.getElementById("star");
-var d2 = document.querySelectorAll(
-  ".letter-1, .letter-2, .letter-3, .letter-4, .letter-5, .letter-6, .letter-7, .letter-8, .letter-9"
-);
-
-d1.addEventListener("mouseenter", callAnimation);
-
-var allowed = 1;
-
-function callAnimation() {
-  if ((allowed = 1)) {
-    for (i = 0; i < d2.length; i++) {
-      d2[i].style.animation = "none";
-    }
-    allowed = 0;
-  }
-
-  setTimeout(function () {
-    for (i = 0; i < d2.length; i++) {
-      d2[i].style.animation = "";
-    }
-  }, 100);
-
-  setTimeout(function () {
-    allowed = 1;
-  }, 2500);
-}
