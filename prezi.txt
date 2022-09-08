@@ -1,0 +1,5 @@
+1. János felkonferálja a művet. Oldalválasztás szempontjai, etc. Effektek az oldalon, hogyan valósítottuk mi meg ezeket. 
+2. Dóra: hétfőn elkészítettük a statikus oldalt, betűtípus, színek, képek, header etc...
+3. Geri: kedd: animációk
+4. Viki: smooth-scroll megvalósítása, audio gomb, media query-k, reszponzivitás bemutatása
+5. Ádám: elénekli az Örömódát
