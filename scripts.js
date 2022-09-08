@@ -42,12 +42,12 @@ luxy.init({
 /* Mouse moving background */
 
 const bg = document.querySelector(".img-div");
-const windowWidth = window.innerWidth / 5;
-const windowHeight = window.innerHeight / 5;
+const windowWidth = window.innerWidth / 3;
+const windowHeight = window.innerHeight / 3;
 
 bg.addEventListener("mousemove", (e) => {
-    const mouseX = e.clientX / windowWidth / 3;
-    const mouseY = e.clientY / windowHeight / 3;
+    const mouseX = e.clientX / windowWidth;
+    const mouseY = e.clientY / windowHeight;
 
     bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
 });
