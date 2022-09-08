@@ -14,7 +14,6 @@
 </head>
 
 <body>
-  <!-- <div class="note"><span class="material-symbols-outlined">music_note</span></div> -->
   <div class="music">
     <button onClick="togglePlay()" class="music-note"><span class="material-symbols-outlined">music_note</span></button>
   </div>
@@ -22,9 +21,9 @@
   <div id="luxy">
     <header>
       <div class="header">
-        <a href="/#">about</a>
-        <a href="/#">timeline</a>
-        <a href="/#">contact<span class="material-symbols-outlined">&#xf1e1</span></a>
+        <a href="#about">about</a>
+        <a href="#">timeline</a>
+        <a href="#">contact<span class="material-symbols-outlined">north_east</span></a>
       </div>
     </header>
     <div class="loadingBar"></div>
@@ -74,6 +73,7 @@
               points="1275.69886 82.6363636 1277.99432 57.3863636 1257.0483 72.0198864 1245.57102 51.9346591 1268.52557 41.3181818 1245.57102 30.7017045 1257.0483 10.6164773 1277.99432 25.25 1275.69886 -2.84217094e-14 1298.65341 -2.84217094e-14 1296.35795 25.25 1317.30398 10.6164773 1328.78125 30.7017045 1305.8267 41.3181818 1328.78125 51.9346591 1317.30398 72.0198864 1296.35795 57.3863636 1298.65341 82.6363636">
             </polygon>
           </g>
+        </g>
       </svg>
       <p class="xsmall-body">
         <span class="caps"> The women behind Ray Charles </span>
@@ -104,11 +104,9 @@
     </div>
     <div class="ray-charles-container">
       <img class="ray-charles" src="Publicity2B.jpeg" alt="Ray Charles and his Rayettes">
-      <div>
-        <p class="footnote">Article including little interview with Margie, from Los Angeles Sentinel Sep 15, 1960.</p>
-      </div>
+      <p class="footnote">Article including little interview with Margie, from Los Angeles Sentinel Sep 15, 1960.</p>
     </div>
-    <div class="main-text-container">
+    <div class="main-text-container" id="about">
       <div class="main-text">
         <div class="upper-text">
           <p>Ray ‘discovered’ The Cookies* in 1956, in Philadelphia. That night he went out to a concert by the Lionel Hampton Band. Chuck Willis opened the show, and he was accompanied by the girls. Ray, as he later stated, was immediately hooked on their way of singing. He had already recorded <em>Drown In My Own Tears</em> with Mary Ann Fisher, supported by two other girls, but now he wanted to make this kind of female backing vocals part of his sound, permanently.</p>
@@ -128,14 +126,12 @@
       </div>
     </div>
   </div>
-  <script src="luxy.js" charset="utf-8"></script>
-  <script src="scripts.js" charset="utf-8"></script>
+  <script src="luxy.js"></script>
+  <script src="scripts.js"></script>
   <!-- 
   sources:
   https://codepen.io/shadowdesigner/pen/ZpdwEa
   https://min30327.github.io/luxy.js/
  -->
-
 </body>
-
 </html>

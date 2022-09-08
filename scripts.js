@@ -23,7 +23,7 @@ function callAnimation() {
         allowed = false;
         setTimeout(function () {
             allowed = true;
-        }, 2500);
+        }, 2000);
     }
 }
 
